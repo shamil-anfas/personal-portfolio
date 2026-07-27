@@ -103,7 +103,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://wa.me/918848399279?text=Hi%20Shamil!%20%F0%9F%91%8B%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20connect." target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/918848399279?text=Hi%20Shamil!%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20connect." target="_blank" rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

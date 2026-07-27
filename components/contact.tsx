@@ -319,7 +319,7 @@ export default function Contact() {
                       </Button>
                       <Button variant="outline" size="icon" asChild>
                         <a
-                          href="https://wa.me/918848399279?text=Hi%20Shamil!%20%F0%9F%91%8B%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20connect."
+                          href="https://wa.me/918848399279?text=Hi%20Shamil!%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20connect."
                           target="_blank"
                           rel="noopener noreferrer"
                         >
