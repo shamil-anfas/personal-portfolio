@@ -4,6 +4,10 @@ A modern personal portfolio website built with **Next.js**, **TypeScript**, and 
 
 ---
 
+## Live Portfolio
+
+https://shamilanfas.vercel.app
+
 ## Getting Started
 
 ### Prerequisites
