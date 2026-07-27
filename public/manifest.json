@@ -1,0 +1,20 @@
+{
+  "name": "Shamil Anfas | Python Full Stack & AI Developer",
+  "short_name": "Shamil Anfas",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
