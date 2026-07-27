@@ -4,6 +4,10 @@ A modern personal portfolio website built with **Next.js**, **TypeScript**, and 
 
 ---
 
+## Live Portfolio
+
+https://shamilanfas.vercel.app
+
 ## Getting Started
 
 ### Prerequisites
@@ -16,7 +20,7 @@ Make sure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/personal-portfolio.git
+git clone https://github.com/shamil-anfas/personal-portfolio.git
 cd personal-portfolio
 ```
 
