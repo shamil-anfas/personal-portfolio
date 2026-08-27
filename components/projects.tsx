@@ -16,12 +16,28 @@ interface Project {
 export default function Projects() {
   const projects: Project[] = [
     {
-      title: "Mentor Slot Booking System",
+      title: "Freelance Marketplace",
       description:
-        "A mentorship scheduling platform that allows users to manage availability, book mentor slots, and receive automated email notifications.",
-      tags: ["Django", "DRF", "PostgreSQL", "Celery", "Redis"],
-      codeLink: "https://github.com/shamil-anfas/mentor-booking",
-      image: "/projects/mentor-booking.png",
+        "A full-stack Freelance Marketplace platform that connects clients with skilled freelancers. Clients can post projects, review applications, and hire talent — while freelancers can browse opportunities, apply, and manage their work — all within a clean, role-based interface.",
+      tags: [
+        "Django",
+        "DRF",
+        "PostgreSQL",
+        "Redis",
+        "Celery",
+        "Simple JWT",
+        "Docker",
+        "React 19",
+        "Redux Toolkit",
+        "React Router",
+        "Tailwind CSS",
+        "Stripe SDK",
+        "Nginx",
+        "Gunicorn",
+      ],
+      codeLink: "https://github.com/shamil-anfas/freelance-marketplace",
+      demoLink: "https://freelancemarketplace-two.vercel.app/",
+      image: "/projects/freelance-marketplace.png",
     },
     {
       title: "LeadAudit Pro",
@@ -48,6 +64,15 @@ export default function Projects() {
       demoLink: "https://ai-resume-analyzer-olive-kappa.vercel.app/",
       image: "/projects/ai-resume-analyzer.png",
     },
+    {
+      title: "Mentor Slot Booking System",
+      description:
+        "A mentorship scheduling platform that allows users to manage availability, book mentor slots, and receive automated email notifications.",
+      tags: ["Django", "DRF", "PostgreSQL", "Celery", "Redis"],
+      codeLink: "https://github.com/shamil-anfas/mentor-booking",
+      image: "/projects/mentor-booking.png",
+    },
+
     {
       title: "AI Document Assistant",
       description:
