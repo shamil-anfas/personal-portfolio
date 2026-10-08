@@ -81,6 +81,39 @@ export default function Projects() {
       codeLink: "https://github.com/shamil-anfas",
       image: "/projects/ai-document-assistant.png",
     },
+    {
+      title: "AI Client Onboarding Automation",
+      description:
+        "An automation built in Make that turns a sales handover into a fully set-up client project in seconds. An AI model reads the deal notes, extracts the scope, plans the tasks and flags risks. The workflow writes the project board, sends the client a welcome email and alerts the delivery team on Slack.",
+      tags: [
+        "Make",
+        "Google Gemini",
+        "Webhook",
+        "Google Sheets",
+        "Gmail",
+        "Slack",
+        "AI Automation",
+        "JSON",
+      ],
+      codeLink: "https://github.com/shamil-anfas/onboarding-automation",
+      image: "/projects/ai-onboarding-automation.jpg",
+    },
+    {
+      title: "Hospital Appointment Booking Bot",
+      description:
+        "A Telegram bot that lets patients book appointments with doctors across multiple hospital departments. Patients tap through menus or type what they need, and an AI model routes them to the right department. Live availability, double-booking protection and booking data are handled by an n8n workflow backed by Google Sheets.",
+      tags: [
+        "n8n",
+        "Telegram Bot API",
+        "Google Gemini",
+        "Google Sheets",
+        "JavaScript",
+        "AI Routing",
+        "Webhook",
+      ],
+      codeLink: "https://github.com/shamil-anfas/hospital-appointment-bot",
+      image: "/projects/hospital-appointment-bot.jpg",
+    },
   ];
 
   return (
