@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Download, Github, Linkedin, Mail } from "lucide-react"
-import Link from "next/link"
-import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const ROLES = [
   "Python Full Stack & AI Developer",
@@ -12,28 +12,31 @@ const ROLES = [
   "Backend Developer",
   "AI & Automation Engineer",
   "Generative AI Developer",
-]
+];
 
 export default function Hero() {
-  const [roleIndex, setRoleIndex] = useState(0)
-  const [visible, setVisible] = useState(true)
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
       // Fade out
-      setVisible(false)
+      setVisible(false);
       setTimeout(() => {
         // Switch role then fade in
-        setRoleIndex((prev) => (prev + 1) % ROLES.length)
-        setVisible(true)
-      }, 500) // half-second fade-out before switching
-    }, 3000) // total display time per role
+        setRoleIndex((prev) => (prev + 1) % ROLES.length);
+        setVisible(true);
+      }, 500); // half-second fade-out before switching
+    }, 3000); // total display time per role
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section id="home" className="py-20 md:py-32 flex flex-col items-center justify-center min-h-[90vh]">
+    <section
+      id="home"
+      className="py-20 md:py-32 flex flex-col items-center justify-center min-h-[90vh]"
+    >
       <div className="container px-4 md:px-6 mx-auto">
         <motion.div
           className="flex flex-col items-center space-y-4 text-center"
@@ -63,21 +66,33 @@ export default function Hero() {
                 {ROLES[roleIndex]}
               </span>
               <noscript>
-                <span>Python Full Stack & AI Developer | Django | FastAPI | Generative AI | RAG</span>
+                <span>
+                  Python Full Stack & AI Developer | Django | FastAPI |
+                  Generative AI | RAG
+                </span>
               </noscript>
             </p>
           </div>
           <div className="max-w-[700px] text-muted-foreground">
             <p className="text-lg text-pretty">
-              Turning ideas into scalable web applications, intelligent AI solutions, and automated workflows.
+              Turning ideas into scalable web applications, intelligent AI
+              solutions, and automated workflows.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Button asChild size="lg" className="rounded-full">
               <Link href="#projects">View Projects</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="rounded-full">
-              <a href="/Shamil_Anfas_Resume.pdf" download="Shamil_Anfas_Resume.pdf">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="rounded-full"
+            >
+              <a
+                href="/Shamil_Anfas_K_Resume.pdf"
+                download="Shamil_Anfas_K_Resume.pdf"
+              >
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </a>
@@ -85,13 +100,21 @@ export default function Hero() {
           </div>
           <div className="flex gap-4 mt-6">
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://github.com/shamil-anfas" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com/shamil-anfas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://linkedin.com/in/shamilanfas" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://linkedin.com/in/shamilanfas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -103,7 +126,11 @@ export default function Hero() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://wa.me/918848399279?text=Hi%20Shamil!%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20connect." target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://wa.me/918848399279?text=Hi%20Shamil!%20I%20came%20across%20your%20portfolio%20and%20I%27d%20love%20to%20connect."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -119,5 +146,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
